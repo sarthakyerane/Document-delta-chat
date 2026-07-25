@@ -35,8 +35,7 @@ python -c "from src.pipeline.graph import run_pipeline; run_pipeline(pid_a='rev_
 | Modified Items | 2,137 |
 | **Average Confidence** | **0.92** |
 | Low-Confidence Items | 0 |
-
-![The detailed breakdown](image-3.png)
+![2600](image-5.png)
 
 ### Breakdown by Element Type
 - **Geometry Shapes & Lines:** 2,568
@@ -64,6 +63,8 @@ python -m src.cli chat --run-id 14aaf2d6-2475-4ae3-9b63-6add0af64a85
 ```
 
 ### Interactive Session Log
+
+![alt text](image-6.png)
 
 ```text
 User: What happened to the 3RD STAGE HP GAS LIFT COMPRESSOR in revision B?
