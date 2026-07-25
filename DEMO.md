@@ -80,6 +80,7 @@ Citations:
 ---
 
 ## 3. Evaluation Scorecard Output
+![alt text](image-8.png)
 
 ### Executed Command
 ```bash
