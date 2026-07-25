@@ -1,0 +1,340 @@
+{
+  "trace_id": "3e3f1bd3-11dc-4354-856c-1730e0fddfb7",
+  "request_id": "3e3f1bd3-11dc-4354-856c-1730e0fddfb7",
+  "service": "delta-chat",
+  "version": "0.1.0",
+  "start_time": "2026-07-25T17:38:24.270360+00:00",
+  "end_time": "2026-07-25T17:38:58.814371+00:00",
+  "total_duration_ms": 34544.01,
+  "spans": [
+    {
+      "span_id": "b55b644b139e",
+      "parent_span_id": null,
+      "name": "pipeline.ingest",
+      "start_time": "2026-07-25T17:38:24.272671+00:00",
+      "end_time": "2026-07-25T17:38:24.386360+00:00",
+      "duration_ms": 113.69,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "44a412ded09e",
+      "parent_span_id": "b55b644b139e",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T17:38:24.305853+00:00",
+      "end_time": "2026-07-25T17:38:24.327773+00:00",
+      "duration_ms": 21.92,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "path": "C:\\Assignment\\delta-chat\\eval\\datasets\\pair_02\\doc_a.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "9d4dd2f75a81",
+      "parent_span_id": "44a412ded09e",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:24.308901+00:00",
+      "end_time": "2026-07-25T17:38:24.318840+00:00",
+      "duration_ms": 9.94,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "c9591bb99e89",
+      "parent_span_id": "44a412ded09e",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:24.318877+00:00",
+      "end_time": "2026-07-25T17:38:24.327492+00:00",
+      "duration_ms": 8.62,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "page_index": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "65beac32a013",
+      "parent_span_id": "b55b644b139e",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T17:38:24.362748+00:00",
+      "end_time": "2026-07-25T17:38:24.384657+00:00",
+      "duration_ms": 21.91,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "path": "C:\\Assignment\\delta-chat\\eval\\datasets\\pair_02\\doc_b.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "a2b854b57ac9",
+      "parent_span_id": "65beac32a013",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:24.365731+00:00",
+      "end_time": "2026-07-25T17:38:24.376797+00:00",
+      "duration_ms": 11.07,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "6411956afbb2",
+      "parent_span_id": "65beac32a013",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:24.376830+00:00",
+      "end_time": "2026-07-25T17:38:24.384322+00:00",
+      "duration_ms": 7.49,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "page_index": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "f3dccfec93af",
+      "parent_span_id": null,
+      "name": "pipeline.delta",
+      "start_time": "2026-07-25T17:38:24.387363+00:00",
+      "end_time": "2026-07-25T17:38:53.780002+00:00",
+      "duration_ms": 29392.64,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "6a6b0d1060b6",
+      "parent_span_id": "f3dccfec93af",
+      "name": "delta.engine",
+      "start_time": "2026-07-25T17:38:24.387392+00:00",
+      "end_time": "2026-07-25T17:38:53.779699+00:00",
+      "duration_ms": 29392.31,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "52f6e080fb31",
+      "parent_span_id": "6a6b0d1060b6",
+      "name": "delta.align",
+      "start_time": "2026-07-25T17:38:24.387436+00:00",
+      "end_time": "2026-07-25T17:38:43.704864+00:00",
+      "duration_ms": 19317.43,
+      "status": "OK",
+      "attributes": {
+        "pid_a": "pair02_rev1",
+        "pid_b": "pair02_rev2",
+        "elements_a": 14,
+        "elements_b": 14,
+        "matched": 12,
+        "removed": 2,
+        "added": 2,
+        "llm_disambiguated": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "2b73c7ba0764",
+      "parent_span_id": "52f6e080fb31",
+      "name": "llm.call.groq",
+      "start_time": "2026-07-25T17:38:24.387966+00:00",
+      "end_time": "2026-07-25T17:38:24.985769+00:00",
+      "duration_ms": 597.8,
+      "status": "ERROR",
+      "attributes": {},
+      "events": [
+        {
+          "name": "exception",
+          "timestamp": "2026-07-25T17:38:24.985773+00:00",
+          "type": "RateLimitError",
+          "message": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj7y5h40e82vzsgds7gprg6s` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99129, Requested 4431. Please try again in 51m15.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      ]
+    },
+    {
+      "span_id": "66dbfe72e750",
+      "parent_span_id": "52f6e080fb31",
+      "name": "llm.call.gemini",
+      "start_time": "2026-07-25T17:38:24.986069+00:00",
+      "end_time": "2026-07-25T17:38:25.578504+00:00",
+      "duration_ms": 592.43,
+      "status": "ERROR",
+      "attributes": {},
+      "events": [
+        {
+          "name": "exception",
+          "timestamp": "2026-07-25T17:38:25.578509+00:00",
+          "type": "ResourceExhausted",
+          "message": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 34.432546471s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 34\n}\n]"
+        }
+      ]
+    },
+    {
+      "span_id": "f508821fb67f",
+      "parent_span_id": "52f6e080fb31",
+      "name": "llm.call.ollama",
+      "start_time": "2026-07-25T17:38:27.970386+00:00",
+      "end_time": "2026-07-25T17:38:43.704620+00:00",
+      "duration_ms": 15734.23,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "6098aaaad8c9",
+      "parent_span_id": "6a6b0d1060b6",
+      "name": "delta.classify",
+      "start_time": "2026-07-25T17:38:43.705142+00:00",
+      "end_time": "2026-07-25T17:38:53.779464+00:00",
+      "duration_ms": 10074.32,
+      "status": "OK",
+      "attributes": {
+        "matched": 12,
+        "only_a": 2,
+        "only_b": 2,
+        "total_items": 9,
+        "added": 2,
+        "removed": 2,
+        "modified": 5
+      },
+      "events": []
+    },
+    {
+      "span_id": "a8d0c11460f9",
+      "parent_span_id": null,
+      "name": "pipeline.report",
+      "start_time": "2026-07-25T17:38:53.781321+00:00",
+      "end_time": "2026-07-25T17:38:53.815728+00:00",
+      "duration_ms": 34.41,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "d1c848e9a1ba",
+      "parent_span_id": null,
+      "name": "pipeline.index",
+      "start_time": "2026-07-25T17:38:53.817530+00:00",
+      "end_time": "2026-07-25T17:38:58.813043+00:00",
+      "duration_ms": 4995.51,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "f61754bebba8",
+      "parent_span_id": "d1c848e9a1ba",
+      "name": "index.pid_a",
+      "start_time": "2026-07-25T17:38:53.831635+00:00",
+      "end_time": "2026-07-25T17:38:55.180466+00:00",
+      "duration_ms": 1348.83,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "elements": 14,
+        "chunks_indexed": 2
+      },
+      "events": []
+    },
+    {
+      "span_id": "4295cb53975e",
+      "parent_span_id": "d1c848e9a1ba",
+      "name": "index.pid_b",
+      "start_time": "2026-07-25T17:38:55.180645+00:00",
+      "end_time": "2026-07-25T17:38:56.516132+00:00",
+      "duration_ms": 1335.49,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "elements": 14,
+        "chunks_indexed": 2
+      },
+      "events": []
+    },
+    {
+      "span_id": "25c3cbef668f",
+      "parent_span_id": "d1c848e9a1ba",
+      "name": "index.delta",
+      "start_time": "2026-07-25T17:38:56.516283+00:00",
+      "end_time": "2026-07-25T17:38:58.812766+00:00",
+      "duration_ms": 2296.48,
+      "status": "OK",
+      "attributes": {
+        "items": 9,
+        "chunks_indexed": 3
+      },
+      "events": []
+    }
+  ],
+  "llm_calls": [
+    {
+      "span_id": "d7aacfe149a8",
+      "model": "groq",
+      "provider": "groq",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "duration_ms": 0.0,
+      "status": "ERROR",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj7y5h40e82vzsgds7gprg6s` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99129, Requested 4431. Please try again in 51m15.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    {
+      "span_id": "9e4413547507",
+      "model": "gemini",
+      "provider": "gemini",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "duration_ms": 0.0,
+      "status": "ERROR",
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 34.432546471s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 34\n}\n]"
+    },
+    {
+      "span_id": "01551ef2e0bb",
+      "model": "llama3.2",
+      "provider": "ollama",
+      "input_tokens": 325,
+      "output_tokens": 43,
+      "total_tokens": 368,
+      "estimated_cost_usd": 0.000226,
+      "duration_ms": 15733.73,
+      "status": "OK",
+      "error": null
+    }
+  ],
+  "llm_summary": {
+    "total_calls": 3,
+    "total_tokens": 368,
+    "total_cost_usd": 0.000226
+  },
+  "errors": [
+    {
+      "span_id": "2b73c7ba0764",
+      "span_name": "llm.call.groq",
+      "error_type": "RateLimitError",
+      "message": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj7y5h40e82vzsgds7gprg6s` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99129, Requested 4431. Please try again in 51m15.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-07-25T17:38:24.985785+00:00"
+    },
+    {
+      "span_id": "66dbfe72e750",
+      "span_name": "llm.call.gemini",
+      "error_type": "ResourceExhausted",
+      "message": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 34.432546471s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 34\n}\n]",
+      "timestamp": "2026-07-25T17:38:25.578600+00:00"
+    }
+  ],
+  "error_count": 2
+}

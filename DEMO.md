@@ -22,6 +22,8 @@ This walkthrough demonstrates the core capabilities of the **Document Delta** sy
 python -c "from src.pipeline.graph import run_pipeline; run_pipeline(pid_a='rev_a', path_a='C:/Users/User/Downloads/Lift Gas compressor-P&ID.pdf', pid_b='rev_b', path_b='C:/Users/User/Downloads/Export Gas Compressor-P&ID (1).pdf')"
 ```
 
+
+![Pipeline Execution Output](image.png)
 ### Generated Report Summary (`delta_report.md`)
 
 | Metric | Value |

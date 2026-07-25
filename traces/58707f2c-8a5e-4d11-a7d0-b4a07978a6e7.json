@@ -1,0 +1,241 @@
+{
+  "trace_id": "58707f2c-8a5e-4d11-a7d0-b4a07978a6e7",
+  "request_id": "58707f2c-8a5e-4d11-a7d0-b4a07978a6e7",
+  "service": "delta-chat",
+  "version": "0.1.0",
+  "start_time": "2026-07-25T17:38:16.879525+00:00",
+  "end_time": "2026-07-25T17:38:24.267412+00:00",
+  "total_duration_ms": 7387.89,
+  "spans": [
+    {
+      "span_id": "1a40a433618f",
+      "parent_span_id": null,
+      "name": "pipeline.ingest",
+      "start_time": "2026-07-25T17:38:16.897538+00:00",
+      "end_time": "2026-07-25T17:38:17.231572+00:00",
+      "duration_ms": 334.03,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "5f3da2a3b642",
+      "parent_span_id": "1a40a433618f",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T17:38:17.115297+00:00",
+      "end_time": "2026-07-25T17:38:17.153078+00:00",
+      "duration_ms": 37.78,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_a",
+        "path": "C:\\Assignment\\delta-chat\\eval\\datasets\\pair_01\\doc_a.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "48edf4361622",
+      "parent_span_id": "5f3da2a3b642",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:17.118159+00:00",
+      "end_time": "2026-07-25T17:38:17.141943+00:00",
+      "duration_ms": 23.78,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_a",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "929341a5c0f3",
+      "parent_span_id": "5f3da2a3b642",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:17.141984+00:00",
+      "end_time": "2026-07-25T17:38:17.152781+00:00",
+      "duration_ms": 10.8,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_a",
+        "page_index": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "4eff711ccfde",
+      "parent_span_id": "1a40a433618f",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T17:38:17.199866+00:00",
+      "end_time": "2026-07-25T17:38:17.230314+00:00",
+      "duration_ms": 30.45,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_b",
+        "path": "C:\\Assignment\\delta-chat\\eval\\datasets\\pair_01\\doc_b.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "e3625a4122fc",
+      "parent_span_id": "4eff711ccfde",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:17.202376+00:00",
+      "end_time": "2026-07-25T17:38:17.218439+00:00",
+      "duration_ms": 16.06,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_b",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "2073ce34145a",
+      "parent_span_id": "4eff711ccfde",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:38:17.218488+00:00",
+      "end_time": "2026-07-25T17:38:17.230036+00:00",
+      "duration_ms": 11.55,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_b",
+        "page_index": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "8b1c7b0ce8ce",
+      "parent_span_id": null,
+      "name": "pipeline.delta",
+      "start_time": "2026-07-25T17:38:17.232605+00:00",
+      "end_time": "2026-07-25T17:38:17.273059+00:00",
+      "duration_ms": 40.45,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "7a4e802fc98e",
+      "parent_span_id": "8b1c7b0ce8ce",
+      "name": "delta.engine",
+      "start_time": "2026-07-25T17:38:17.270411+00:00",
+      "end_time": "2026-07-25T17:38:17.272733+00:00",
+      "duration_ms": 2.32,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "de9b344f4a13",
+      "parent_span_id": "7a4e802fc98e",
+      "name": "delta.align",
+      "start_time": "2026-07-25T17:38:17.270458+00:00",
+      "end_time": "2026-07-25T17:38:17.271662+00:00",
+      "duration_ms": 1.2,
+      "status": "OK",
+      "attributes": {
+        "pid_a": "pair01_rev_a",
+        "pid_b": "pair01_rev_b",
+        "elements_a": 20,
+        "elements_b": 21,
+        "matched": 19,
+        "removed": 1,
+        "added": 2,
+        "llm_disambiguated": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "2a77cc2de2df",
+      "parent_span_id": "7a4e802fc98e",
+      "name": "delta.classify",
+      "start_time": "2026-07-25T17:38:17.271971+00:00",
+      "end_time": "2026-07-25T17:38:17.272509+00:00",
+      "duration_ms": 0.54,
+      "status": "OK",
+      "attributes": {
+        "matched": 19,
+        "only_a": 1,
+        "only_b": 2,
+        "total_items": 9,
+        "added": 2,
+        "removed": 1,
+        "modified": 6
+      },
+      "events": []
+    },
+    {
+      "span_id": "c12482fbae0c",
+      "parent_span_id": null,
+      "name": "pipeline.report",
+      "start_time": "2026-07-25T17:38:17.274293+00:00",
+      "end_time": "2026-07-25T17:38:17.296791+00:00",
+      "duration_ms": 22.5,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "8280fb615a42",
+      "parent_span_id": null,
+      "name": "pipeline.index",
+      "start_time": "2026-07-25T17:38:17.297517+00:00",
+      "end_time": "2026-07-25T17:38:24.265986+00:00",
+      "duration_ms": 6968.47,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "49030dd89e6a",
+      "parent_span_id": "8280fb615a42",
+      "name": "index.pid_a",
+      "start_time": "2026-07-25T17:38:18.321906+00:00",
+      "end_time": "2026-07-25T17:38:20.389381+00:00",
+      "duration_ms": 2067.48,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_a",
+        "elements": 20,
+        "chunks_indexed": 2
+      },
+      "events": []
+    },
+    {
+      "span_id": "e6da60b8fb2f",
+      "parent_span_id": "8280fb615a42",
+      "name": "index.pid_b",
+      "start_time": "2026-07-25T17:38:20.389489+00:00",
+      "end_time": "2026-07-25T17:38:22.161710+00:00",
+      "duration_ms": 1772.22,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair01_rev_b",
+        "elements": 21,
+        "chunks_indexed": 2
+      },
+      "events": []
+    },
+    {
+      "span_id": "1c4b88b1595c",
+      "parent_span_id": "8280fb615a42",
+      "name": "index.delta",
+      "start_time": "2026-07-25T17:38:22.161807+00:00",
+      "end_time": "2026-07-25T17:38:24.265780+00:00",
+      "duration_ms": 2103.97,
+      "status": "OK",
+      "attributes": {
+        "items": 9,
+        "chunks_indexed": 3
+      },
+      "events": []
+    }
+  ],
+  "llm_calls": [],
+  "llm_summary": {
+    "total_calls": 0,
+    "total_tokens": 0,
+    "total_cost_usd": 0
+  },
+  "errors": [],
+  "error_count": 0
+}

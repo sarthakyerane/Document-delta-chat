@@ -1,0 +1,213 @@
+{
+  "trace_id": "a970a8ec-74c3-46d7-af20-7e390948686d",
+  "request_id": "a970a8ec-74c3-46d7-af20-7e390948686d",
+  "service": "delta-chat",
+  "version": "0.1.0",
+  "start_time": "2026-07-25T17:33:22.032060+00:00",
+  "end_time": "2026-07-25T17:33:52.312246+00:00",
+  "total_duration_ms": 30280.19,
+  "spans": [
+    {
+      "span_id": "79bdaccf2d01",
+      "parent_span_id": null,
+      "name": "pipeline.ingest",
+      "start_time": "2026-07-25T17:33:22.051660+00:00",
+      "end_time": "2026-07-25T17:33:29.820339+00:00",
+      "duration_ms": 7768.68,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "c58850f3de4a",
+      "parent_span_id": "79bdaccf2d01",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T17:33:24.201771+00:00",
+      "end_time": "2026-07-25T17:33:26.521295+00:00",
+      "duration_ms": 2319.52,
+      "status": "OK",
+      "attributes": {
+        "pid": "rev_a",
+        "path": "C:/Users/User/Downloads/Lift Gas compressor-P&ID.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "4f261a655459",
+      "parent_span_id": "c58850f3de4a",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:33:24.224022+00:00",
+      "end_time": "2026-07-25T17:33:26.520340+00:00",
+      "duration_ms": 2296.32,
+      "status": "OK",
+      "attributes": {
+        "pid": "rev_a",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "a622b46760e8",
+      "parent_span_id": "79bdaccf2d01",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T17:33:27.842465+00:00",
+      "end_time": "2026-07-25T17:33:29.818735+00:00",
+      "duration_ms": 1976.27,
+      "status": "OK",
+      "attributes": {
+        "pid": "rev_b",
+        "path": "C:/Users/User/Downloads/Export Gas Compressor-P&ID (1).pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "8ae1f614cdfd",
+      "parent_span_id": "a622b46760e8",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T17:33:27.855246+00:00",
+      "end_time": "2026-07-25T17:33:29.818292+00:00",
+      "duration_ms": 1963.05,
+      "status": "OK",
+      "attributes": {
+        "pid": "rev_b",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "95cdbba39f5c",
+      "parent_span_id": null,
+      "name": "pipeline.delta",
+      "start_time": "2026-07-25T17:33:29.821480+00:00",
+      "end_time": "2026-07-25T17:33:46.655069+00:00",
+      "duration_ms": 16833.59,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "a8db1a5d8738",
+      "parent_span_id": "95cdbba39f5c",
+      "name": "delta.engine",
+      "start_time": "2026-07-25T17:33:29.916193+00:00",
+      "end_time": "2026-07-25T17:33:46.653135+00:00",
+      "duration_ms": 16736.94,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "49024a3fe8ee",
+      "parent_span_id": "a8db1a5d8738",
+      "name": "delta.align",
+      "start_time": "2026-07-25T17:33:29.916424+00:00",
+      "end_time": "2026-07-25T17:33:46.268400+00:00",
+      "duration_ms": 16351.98,
+      "status": "OK",
+      "attributes": {
+        "pid_a": "rev_a",
+        "pid_b": "rev_b",
+        "elements_a": 2634,
+        "elements_b": 2195,
+        "matched": 2183,
+        "removed": 451,
+        "added": 12,
+        "llm_disambiguated": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "7b9d91f6f395",
+      "parent_span_id": "a8db1a5d8738",
+      "name": "delta.classify",
+      "start_time": "2026-07-25T17:33:46.269303+00:00",
+      "end_time": "2026-07-25T17:33:46.652113+00:00",
+      "duration_ms": 382.81,
+      "status": "OK",
+      "attributes": {
+        "matched": 2183,
+        "only_a": 451,
+        "only_b": 12,
+        "total_items": 2600,
+        "added": 12,
+        "removed": 451,
+        "modified": 2137
+      },
+      "events": []
+    },
+    {
+      "span_id": "d5ca85e41531",
+      "parent_span_id": null,
+      "name": "pipeline.report",
+      "start_time": "2026-07-25T17:33:46.656226+00:00",
+      "end_time": "2026-07-25T17:33:46.778445+00:00",
+      "duration_ms": 122.22,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "6b6af01e92ca",
+      "parent_span_id": null,
+      "name": "pipeline.index",
+      "start_time": "2026-07-25T17:33:46.779613+00:00",
+      "end_time": "2026-07-25T17:33:52.310763+00:00",
+      "duration_ms": 5531.15,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "bc99cfa97d90",
+      "parent_span_id": "6b6af01e92ca",
+      "name": "index.pid_a",
+      "start_time": "2026-07-25T17:33:47.936939+00:00",
+      "end_time": "2026-07-25T17:33:49.870816+00:00",
+      "duration_ms": 1933.88,
+      "status": "OK",
+      "attributes": {
+        "pid": "rev_a",
+        "elements": 2634,
+        "chunks_indexed": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "7792cf99559c",
+      "parent_span_id": "6b6af01e92ca",
+      "name": "index.pid_b",
+      "start_time": "2026-07-25T17:33:49.871301+00:00",
+      "end_time": "2026-07-25T17:33:50.793468+00:00",
+      "duration_ms": 922.17,
+      "status": "OK",
+      "attributes": {
+        "pid": "rev_b",
+        "elements": 2195,
+        "chunks_indexed": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "2e2bc089dbd0",
+      "parent_span_id": "6b6af01e92ca",
+      "name": "index.delta",
+      "start_time": "2026-07-25T17:33:50.793678+00:00",
+      "end_time": "2026-07-25T17:33:52.310611+00:00",
+      "duration_ms": 1516.93,
+      "status": "OK",
+      "attributes": {
+        "items": 2600,
+        "chunks_indexed": 1
+      },
+      "events": []
+    }
+  ],
+  "llm_calls": [],
+  "llm_summary": {
+    "total_calls": 0,
+    "total_tokens": 0,
+    "total_cost_usd": 0
+  },
+  "errors": [],
+  "error_count": 0
+}
