@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Which pump label was changed?",
+    "expected_answer": "The pump label 'P-101' was changed to 'P-101A' in the revised document."
+  },
+  {
+    "question": "What flow rate was added to the drawing?",
+    "expected_answer": "A flow rate annotation of '120 L/min' was added to the drawing on page 1."
+  },
+  {
+    "question": "What was removed from page 2?",
+    "expected_answer": "The component description 'Cooling Water Return (CWR)' was removed from page 2."
+  },
+  {
+    "question": "What is the pressure rating shown in the revised drawing?",
+    "expected_answer": "The revised drawing shows a maximum pressure rating of 'Max 10 bar', which was added as a new annotation."
+  }
+]

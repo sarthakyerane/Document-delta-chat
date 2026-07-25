@@ -1,0 +1,64 @@
+{
+  "timestamp": "20260725T161008Z",
+  "mode": "full",
+  "elapsed_ms": 49322.2,
+  "dataset_version": "v1",
+  "delta": {
+    "aggregate": {
+      "precision": 0.6667,
+      "recall": 0.9231,
+      "f1": 0.7742
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "run_id": "833d6b47-e2b1-49c6-ae50-fefc2d60e724",
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "tp": 7,
+        "fp": 2,
+        "fn": 0,
+        "predicted": 9,
+        "ground_truth": 7
+      },
+      {
+        "pair_id": "pair_02",
+        "status": "ok",
+        "run_id": "1b8f571f-6cde-413f-a377-0ba2510a4d3b",
+        "precision": 0.5556,
+        "recall": 0.8333,
+        "f1": 0.6667,
+        "tp": 5,
+        "fp": 4,
+        "fn": 1,
+        "predicted": 9,
+        "ground_truth": 6
+      }
+    ]
+  },
+  "chat": {
+    "aggregate": {
+      "correctness": 0.0,
+      "groundedness": 0.0
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "error",
+        "error": "'\"correctness\"'"
+      },
+      {
+        "pair_id": "pair_02",
+        "status": "error",
+        "error": "'\"correctness\"'"
+      }
+    ]
+  },
+  "thresholds": {
+    "min_delta_f1": 0.5,
+    "min_chat_correctness": 0.6,
+    "min_chat_groundedness": 0.65
+  }
+}

@@ -1,0 +1,78 @@
+version: "3.9"
+
+# ════════════════════════════════════════════════════════════════════════════════
+# delta-chat · docker-compose.yml
+# Minimal infrastructure: MySQL + Redis. ChromaDB runs embedded (no container).
+# Usage:
+#   docker compose up -d            # start infra only
+#   docker compose up -d --build    # start infra + build + run app container
+# ════════════════════════════════════════════════════════════════════════════════
+
+services:
+
+  # ── MySQL 8 — structured metadata, eval results, run history ─────────────────
+  mysql:
+    image: mysql:8.0
+    container_name: delta_chat_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: delta_chat
+      MYSQL_USER: delta_user
+      MYSQL_PASSWORD: delta_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "delta_user", "-pdelta_pass"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── Redis 7 — semantic query cache (cosine ≥ 0.90) ───────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: delta_chat_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ── Application (optional — run locally with `make run` for faster dev) ───────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: delta_chat_app
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # Override host-based URLs with container service names
+      DATABASE_URL: mysql+pymysql://delta_user:delta_pass@mysql:3306/delta_chat
+      REDIS_URL: redis://redis:6379/0
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data       # persist chroma, samples, markup
+      - ./traces:/app/traces   # persist trace files
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    profiles:
+      - full  # only starts with: docker compose --profile full up
+
+volumes:
+  mysql_data:
+  redis_data:

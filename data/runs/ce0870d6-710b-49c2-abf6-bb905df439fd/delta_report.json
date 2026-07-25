@@ -1,0 +1,693 @@
+{
+  "report_id": "7e024e7b-cc2e-4c4c-971b-29d760ec706c",
+  "generated_at": "2026-07-25T13:40:22.647231+00:00",
+  "pid_a": "pair01_rev_a",
+  "pid_b": "pair01_rev_b",
+  "run_id": "ce0870d6-710b-49c2-abf6-bb905df439fd",
+  "summary": {
+    "total_changes": 27,
+    "added": 16,
+    "removed": 9,
+    "modified": 2,
+    "by_element_type": {
+      "text": 26,
+      "note": 1
+    },
+    "avg_confidence": 0.982,
+    "low_confidence_count": 0
+  },
+  "items": [
+    {
+      "delta_id": "1b9c9f23c1c2",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 204.89100000000002,
+          "y0": 77.86300000000006,
+          "x1": 210.894,
+          "y1": 86.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'A'",
+      "old_value": "A",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "2a9f521c5af9",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 220.0,
+          "y0": 147.07000000000005,
+          "x1": 239.46,
+          "y1": 157.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: '42.5'",
+      "old_value": "42.5",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "e548e8aa9e4f",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 292.07000000000005,
+          "x1": 110.57000000000001,
+          "y1": 302.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'Flange'",
+      "old_value": "Flange",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "6026d5cb9a88",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 113.35000000000001,
+          "y0": 292.07000000000005,
+          "x1": 136.14000000000001,
+          "y1": 302.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'Body'",
+      "old_value": "Body",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "63c423bd6f75",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 250.0,
+          "y0": 292.07000000000005,
+          "x1": 273.35,
+          "y1": 302.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'A105'",
+      "old_value": "A105",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "d48ad23a6fb3",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 431.12,
+          "y0": 292.07000000000005,
+          "x1": 457.25,
+          "y1": 302.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'B16.5'",
+      "old_value": "B16.5",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "650b828aaf45",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 400.0,
+          "y0": 332.07000000000005,
+          "x1": 428.34000000000003,
+          "y1": 342.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'ASME'",
+      "old_value": "ASME",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "0248eff161ba",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 116.52000000000001,
+          "y0": 52.863000000000056,
+          "x1": 122.52300000000001,
+          "y1": 61.863000000000056,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'A'",
+      "old_value": "A",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "a1fc3806fd2a",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 220.0,
+          "y0": 107.07000000000005,
+          "x1": 233.9,
+          "y1": 117.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: '6.0'",
+      "old_value": "6.0",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "be4329528559",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 300.08000000000015,
+          "y0": 47.31200000000001,
+          "x1": 329.42400000000015,
+          "y1": 63.31200000000001,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'Rev'",
+      "old_value": null,
+      "new_value": "Rev",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "7a06ae7a7c93",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 333.8720000000001,
+          "y0": 47.31200000000001,
+          "x1": 345.42400000000015,
+          "y1": 63.31200000000001,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'B'",
+      "old_value": null,
+      "new_value": "B",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "58558de0ff67",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 204.89100000000002,
+          "y0": 77.86300000000006,
+          "x1": 210.894,
+          "y1": 86.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'B'",
+      "old_value": null,
+      "new_value": "B",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "51ee43eb1035",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 220.0,
+          "y0": 147.07000000000005,
+          "x1": 239.46,
+          "y1": 157.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: '45.0'",
+      "old_value": null,
+      "new_value": "45.0",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "85ca259dd747",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 116.52000000000001,
+          "y0": 52.863000000000056,
+          "x1": 122.52300000000001,
+          "y1": 61.863000000000056,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'B'",
+      "old_value": null,
+      "new_value": "B",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "c0b4e331569f",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 220.0,
+          "y0": 107.07000000000005,
+          "x1": 233.9,
+          "y1": 117.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: '8.0'",
+      "old_value": null,
+      "new_value": "8.0",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "667e6111dcea",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 412.07000000000005,
+          "x1": 108.88,
+          "y1": 422.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'CAUTION:'",
+      "old_value": null,
+      "new_value": "CAUTION:",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "ed3d28ed78c7",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 111.66,
+          "y0": 412.07000000000005,
+          "x1": 155.55,
+          "y1": 422.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'Minimum'",
+      "old_value": null,
+      "new_value": "Minimum",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "42dabf923430",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 158.32999999999998,
+          "y0": 412.07000000000005,
+          "x1": 189.44,
+          "y1": 422.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'torque'",
+      "old_value": null,
+      "new_value": "torque",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "05fc13d2e433",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 192.22,
+          "y0": 412.07000000000005,
+          "x1": 203.34,
+          "y1": 422.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: '45'",
+      "old_value": null,
+      "new_value": "45",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "4c9883772e2d",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 206.12,
+          "y0": 412.07000000000005,
+          "x1": 225.01,
+          "y1": 422.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'N\u00b7m'",
+      "old_value": null,
+      "new_value": "N\u00b7m",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "976bf0caa4c1",
+      "change_type": "added",
+      "element_type": "note",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 437.07000000000005,
+          "x1": 77.79,
+          "y1": 447.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added note: 'See'",
+      "old_value": null,
+      "new_value": "See",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "bc539a63ae33",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 80.57,
+          "y0": 437.07000000000005,
+          "x1": 125.02000000000001,
+          "y1": 447.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'DWG-042'",
+      "old_value": null,
+      "new_value": "DWG-042",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "7e1f50a5260c",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 127.80000000000001,
+          "y0": 437.07000000000005,
+          "x1": 139.47000000000003,
+          "y1": 447.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'for'",
+      "old_value": null,
+      "new_value": "for",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "e42c779b6f64",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 142.25,
+          "y0": 437.07000000000005,
+          "x1": 184.48000000000002,
+          "y1": 447.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'assembly'",
+      "old_value": null,
+      "new_value": "assembly",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "6d1457018dc1",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 187.26000000000002,
+          "y0": 437.07000000000005,
+          "x1": 216.16000000000003,
+          "y1": 447.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'details'",
+      "old_value": null,
+      "new_value": "details",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "22cd30bfd76d",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 242.25000000000003,
+          "y0": 77.86300000000006,
+          "x1": 288.276,
+          "y1": 86.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 242.25000000000003,
+          "y0": 77.86300000000006,
+          "x1": 288.276,
+          "y1": 86.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "The date in Version A is 10 days earlier than the date in Version B, indicating a shorter time period between the two dates.",
+      "old_value": "2024-01-10",
+      "new_value": "2024-03-15",
+      "confidence": 0.765,
+      "alignment_method": "geometric+text_medium"
+    },
+    {
+      "delta_id": "d6e1790201a1",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 220.0,
+          "y0": 167.07000000000005,
+          "x1": 239.46,
+          "y1": 177.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 220.0,
+          "y0": 167.07000000000005,
+          "x1": 239.46,
+          "y1": 177.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "The most significant semantic change is that Version B represents an increase of 5 percentage points compared to Version A, indicating a higher value.",
+      "old_value": "80.0",
+      "new_value": "85.0",
+      "confidence": 0.74375,
+      "alignment_method": "geometric+text_medium"
+    }
+  ]
+}

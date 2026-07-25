@@ -1,0 +1,10 @@
+[text] FAS-001 Rev B — Page 2
+[text] 3. TOLERANCES AND REQUIREMENTS
+[dimension] Wall Thickness: 8.0 mm
+[text] Surface Finish: Ra 3.2 µm (125 µin)
+[text] Pressure Rating: ASME Class 300
+[text] 4. INSPECTION REQUIREMENTS
+[note] All welds to be inspected per ASME IX.
+[text] Hydrostatic test at 1.5x design pressure.
+[text] CAUTION: Minimum torque 45 N·m
+[note] See DWG-042 for assembly details ASM

@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What dimensions changed between the two revisions?",
+    "expected_answer": "Three dimensions changed: (1) Flange diameter from 42.5 mm to 45.0 mm, (2) Bolt circle diameter from 80.0 mm to 85.0 mm, (3) Wall thickness from 6.0 mm to 8.0 mm on page 2."
+  },
+  {
+    "question": "Were any notes added in the revised document?",
+    "expected_answer": "Yes, two notes were added on page 2: a safety caution 'CAUTION: Minimum torque 45 N·m' and a reference note 'See DWG-042 for assembly details'."
+  },
+  {
+    "question": "What is the new flange diameter?",
+    "expected_answer": "The flange diameter in revision B (the revised document) is 45.0 mm, changed from 42.5 mm in revision A."
+  },
+  {
+    "question": "Was anything removed from the document?",
+    "expected_answer": "Yes, one table cell was removed: the material grade 'A105' column entry from the spec table on page 1."
+  },
+  {
+    "question": "What is the capital of France?",
+    "expected_answer": "INSUFFICIENT_GROUNDING: This question is not about the documents being compared and should not be answered from document context."
+  }
+]

@@ -1,0 +1,298 @@
+{
+  "report_id": "6f32a8ff-af93-42a3-bde3-dd16be966155",
+  "generated_at": "2026-07-25T14:46:09.677546+00:00",
+  "pid_a": "pair02_rev1",
+  "pid_b": "pair02_rev2",
+  "run_id": "17bb6856-c78d-4342-9eda-28e90d0c3cd9",
+  "summary": {
+    "total_changes": 9,
+    "added": 2,
+    "removed": 2,
+    "modified": 5,
+    "by_element_type": {
+      "text": 7,
+      "dimension": 1,
+      "note": 1
+    },
+    "avg_confidence": 0.936,
+    "low_confidence_count": 0
+  },
+  "items": [
+    {
+      "delta_id": "a7ed58058b41",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 192.07000000000005,
+          "x1": 189.46,
+          "y1": 202.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'Cooling Water Return (CWR)'",
+      "old_value": "Cooling Water Return (CWR)",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "8962092df380",
+      "change_type": "removed",
+      "element_type": "dimension",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 210.07000000000005,
+          "x1": 233.05000000000004,
+          "y1": 220.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed dimension: 'CWR supply at 20\u00b0C, return max 35\u00b0C.'",
+      "old_value": "CWR supply at 20\u00b0C, return max 35\u00b0C.",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "be4329528559",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 300.0,
+          "y0": 147.86300000000006,
+          "x1": 339.519,
+          "y1": 156.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: '120 L/min'",
+      "old_value": null,
+      "new_value": "120 L/min",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "976bf0caa4c1",
+      "change_type": "added",
+      "element_type": "note",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 352.07000000000005,
+          "x1": 270.6300000000001,
+          "y1": 362.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added note: 'NOTE: All lines ANSI 150 class unless noted'",
+      "old_value": null,
+      "new_value": "NOTE: All lines ANSI 150 class unless noted",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "c8812fdec48e",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 38.898000000000025,
+          "x1": 306.582,
+          "y1": 52.898000000000025,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 38.898000000000025,
+          "x1": 306.582,
+          "y1": 52.898000000000025,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'PROCESS FLOW DIAGRAM \u2014 REV 1' \u2192 'PROCESS FLOW DIAGRAM \u2014 REV 2'",
+      "old_value": "PROCESS FLOW DIAGRAM \u2014 REV 1",
+      "new_value": "PROCESS FLOW DIAGRAM \u2014 REV 2",
+      "confidence": 0.9821428571428572,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "c8812fdec48e",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 67.86300000000006,
+          "x1": 236.904,
+          "y1": 76.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 67.86300000000006,
+          "x1": 270.25800000000004,
+          "y1": 76.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'Project: Alpha Plant | Drawing No.: PFD-001' \u2192 'Project: Alpha Plant | Drawing No.: PFD-001 | Rev: 2'",
+      "old_value": "Project: Alpha Plant | Drawing No.: PFD-001",
+      "new_value": "Project: Alpha Plant | Drawing No.: PFD-001 | Rev: 2",
+      "confidence": 0.8733147396356655,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "346874421844",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 100.0,
+          "y0": 172.07000000000005,
+          "x1": 529.99,
+          "y1": 182.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 100.0,
+          "y0": 162.86300000000006,
+          "x1": 529.99,
+          "y1": 182.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'FEED TANK CENTRIFUGAL PUMP PRODUCT TANK' \u2192 'Max 10 bar FEED TANK CENTRIFUGAL PUMP PRODUCT TANK'",
+      "old_value": "FEED TANK CENTRIFUGAL PUMP PRODUCT TANK",
+      "new_value": "Max 10 bar FEED TANK CENTRIFUGAL PUMP PRODUCT TANK",
+      "confidence": 0.7887640449438202,
+      "alignment_method": "text_high"
+    },
+    {
+      "delta_id": "08a0138fb072",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 52.863000000000056,
+          "x1": 183.048,
+          "y1": 61.863000000000056,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 52.863000000000056,
+          "x1": 183.048,
+          "y1": 61.863000000000056,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'PFD-001 Rev 1 \u2014 Notes Page' \u2192 'PFD-001 Rev 2 \u2014 Notes Page'",
+      "old_value": "PFD-001 Rev 1 \u2014 Notes Page",
+      "new_value": "PFD-001 Rev 2 \u2014 Notes Page",
+      "confidence": 0.9807692307692308,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "346874421844",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair02_rev1",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 100.0,
+          "y0": 187.07000000000005,
+          "x1": 482.79,
+          "y1": 197.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair02_rev2",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 100.0,
+          "y0": 187.07000000000005,
+          "x1": 535.0200000000001,
+          "y1": 197.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "The codes \"P-101\" and \"TK-201\" have been modified to \"P-101A\" and \"TK-201B\" respectively, indicating revisions or updates to the original codes. The addition of \"(Revised)\" further emphasizes that changes have been made to the original version.",
+      "old_value": "TK-101 P-101 TK-201",
+      "new_value": "TK-101 P-101A TK-201B (Revised)",
+      "confidence": 0.8,
+      "alignment_method": "llm_assisted"
+    }
+  ]
+}

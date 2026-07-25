@@ -1,0 +1,152 @@
+{
+  "timestamp": "20260725T144725Z",
+  "mode": "full",
+  "elapsed_ms": 38177.0,
+  "dataset_version": "v1",
+  "delta": {
+    "aggregate": {
+      "precision": 0.2778,
+      "recall": 0.3846,
+      "f1": 0.3226
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "run_id": "94e61238-4f2b-4802-8b97-2730f920f3da",
+        "precision": 0.2222,
+        "recall": 0.2857,
+        "f1": 0.25,
+        "tp": 2,
+        "fp": 7,
+        "fn": 5,
+        "predicted": 9,
+        "ground_truth": 7
+      },
+      {
+        "pair_id": "pair_02",
+        "status": "ok",
+        "run_id": "884d6422-2a90-4eb0-83e9-7efb1c8bd338",
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "tp": 3,
+        "fp": 6,
+        "fn": 3,
+        "predicted": 9,
+        "ground_truth": 6
+      }
+    ]
+  },
+  "chat": {
+    "aggregate": {
+      "correctness": 0.1667,
+      "groundedness": 0.2222,
+      "total_qa": 9
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "avg_correctness": 0.3,
+        "avg_groundedness": 0.4,
+        "qa_count": 5
+      },
+      {
+        "pair_id": "pair_02",
+        "status": "ok",
+        "avg_correctness": 0.0,
+        "avg_groundedness": 0.0,
+        "qa_count": 4
+      }
+    ],
+    "per_question": [
+      {
+        "qa_index": 0,
+        "question": "What dimensions changed between the two revisions?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer failed to provide any relevant information and did not cite any sources to support its claim of being unable to find the information.",
+        "expected": "Three dimensions changed: (1) Flange diameter from 42.5 mm to 45.0 mm, (2) Bolt circle diameter from 80.0 mm to 85.0 mm, (3) Wall thickness from 6.0 mm to 8.0 mm on page 2.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What dimensions changed between the two revisions?'. Please try rephrasing or asking about specific pages, elements,"
+      },
+      {
+        "qa_index": 1,
+        "question": "Were any notes added in the revised document?",
+        "correctness": 0.5,
+        "groundedness": 1.0,
+        "reason": "The system answer is partially correct as it mentions one of the added notes but fails to acknowledge the other, while being fully grounded in cited sources.",
+        "expected": "Yes, two notes were added on page 2: a safety caution 'CAUTION: Minimum torque 45 N\u00c2\u00b7m' and a reference note 'See DWG-042 for assembly details'.",
+        "got": "Yes, a note was added in the revised document [Citation 1]. The added note is: 'See DWG-042 for assembly details' [Citation 1]. This note was added after the text 'CAUTION: Minimum torque 45 N\u00b7m' [Cit"
+      },
+      {
+        "qa_index": 2,
+        "question": "What is the new flange diameter?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer fails to provide any relevant information about the new flange diameter and lacks citations to support its claim of being unable to find relevant information.",
+        "expected": "The flange diameter in revision B (the revised document) is 45.0 mm, changed from 42.5 mm in revision A.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What is the new flange diameter?'. Please try rephrasing or asking about specific pages, elements, or changes."
+      },
+      {
+        "qa_index": 3,
+        "question": "Was anything removed from the document?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer fails to address the question and lacks any cited sources to support its claim of being unable to find relevant information.",
+        "expected": "Yes, one table cell was removed: the material grade 'A105' column entry from the spec table on page 1.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'Was anything removed from the document?'. Please try rephrasing or asking about specific pages, elements, or changes"
+      },
+      {
+        "qa_index": 4,
+        "question": "What is the capital of France?",
+        "correctness": 1.0,
+        "groundedness": 1.0,
+        "reason": "The system answer correctly addresses the question by stating it cannot find relevant information and does not provide any unsubstantiated claims, matching the reference answer's intent.",
+        "expected": "INSUFFICIENT_GROUNDING: This question is not about the documents being compared and should not be answered from document context.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What is the capital of France?'. Please try rephrasing or asking about specific pages, elements, or changes."
+      },
+      {
+        "qa_index": 0,
+        "question": "Which pump label was changed?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer failed to provide any relevant information and lacked citations to support its claim of being unable to find relevant information.",
+        "expected": "The pump label 'P-101' was changed to 'P-101A' in the revised document.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'Which pump label was changed?'. Please try rephrasing or asking about specific pages, elements, or changes."
+      },
+      {
+        "qa_index": 1,
+        "question": "What flow rate was added to the drawing?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer fails to provide any relevant information and lacks citations to support its claim of being unable to find the information.",
+        "expected": "A flow rate annotation of '120 L/min' was added to the drawing on page 1.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What flow rate was added to the drawing?'. Please try rephrasing or asking about specific pages, elements, or change"
+      },
+      {
+        "qa_index": 2,
+        "question": "What was removed from page 2?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer failed to provide a correct response and lacked any cited sources to support its claim of being unable to find relevant information.",
+        "expected": "The component description 'Cooling Water Return (CWR)' was removed from page 2.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What was removed from page 2?'. Please try rephrasing or asking about specific pages, elements, or changes."
+      },
+      {
+        "qa_index": 3,
+        "question": "What is the pressure rating shown in the revised drawing?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer fails to provide a correct pressure rating and lacks any cited sources to support its claim of being unable to find relevant information.",
+        "expected": "The revised drawing shows a maximum pressure rating of 'Max 10 bar', which was added as a new annotation.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What is the pressure rating shown in the revised drawing?'. Please try rephrasing or asking about specific pages, el"
+      }
+    ]
+  },
+  "thresholds": {
+    "min_delta_f1": 0.5,
+    "min_chat_correctness": 0.6,
+    "min_chat_groundedness": 0.65
+  }
+}

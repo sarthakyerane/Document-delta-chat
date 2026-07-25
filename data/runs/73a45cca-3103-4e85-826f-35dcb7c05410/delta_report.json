@@ -1,0 +1,310 @@
+{
+  "report_id": "98974b36-4258-48e3-bfda-8b26922e86c3",
+  "generated_at": "2026-07-25T14:47:02.597632+00:00",
+  "pid_a": "pair01_rev_a",
+  "pid_b": "pair01_rev_b",
+  "run_id": "73a45cca-3103-4e85-826f-35dcb7c05410",
+  "summary": {
+    "total_changes": 9,
+    "added": 2,
+    "removed": 1,
+    "modified": 6,
+    "by_element_type": {
+      "text": 5,
+      "note": 1,
+      "dimension": 3
+    },
+    "avg_confidence": 0.97,
+    "low_confidence_count": 0
+  },
+  "items": [
+    {
+      "delta_id": "e548e8aa9e4f",
+      "change_type": "removed",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 292.07000000000005,
+          "x1": 457.25,
+          "y1": 302.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": null,
+      "description": "Removed text: 'Flange Body A105 ASME B16.5'",
+      "old_value": "Flange Body A105 ASME B16.5",
+      "new_value": null,
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "667e6111dcea",
+      "change_type": "added",
+      "element_type": "text",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 412.07000000000005,
+          "x1": 225.01,
+          "y1": 422.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added text: 'CAUTION: Minimum torque 45 N\u00b7m'",
+      "old_value": null,
+      "new_value": "CAUTION: Minimum torque 45 N\u00b7m",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "976bf0caa4c1",
+      "change_type": "added",
+      "element_type": "note",
+      "location_a": null,
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 437.07000000000005,
+          "x1": 216.16000000000003,
+          "y1": 447.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Added note: 'See DWG-042 for assembly details'",
+      "old_value": null,
+      "new_value": "See DWG-042 for assembly details",
+      "confidence": 1.0,
+      "alignment_method": "unmatched"
+    },
+    {
+      "delta_id": "c8812fdec48e",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 47.31200000000001,
+          "x1": 295.6320000000001,
+          "y1": 63.31200000000001,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 47.31200000000001,
+          "x1": 345.42400000000015,
+          "y1": 63.31200000000001,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'Flange Assembly Specification' \u2192 'Flange Assembly Specification Rev B'",
+      "old_value": "Flange Assembly Specification",
+      "new_value": "Flange Assembly Specification Rev B",
+      "confidence": 0.8659003797858624,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "c8812fdec48e",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 77.86300000000006,
+          "x1": 288.276,
+          "y1": 86.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 77.86300000000006,
+          "x1": 288.276,
+          "y1": 86.86300000000006,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'Document No.: FAS-001 | Revision: A | Date: 2024-01-10' \u2192 'Document No.: FAS-001 | Revision: B | Date: 2024-03-15'",
+      "old_value": "Document No.: FAS-001 | Revision: A | Date: 2024-01-10",
+      "new_value": "Document No.: FAS-001 | Revision: B | Date: 2024-03-15",
+      "confidence": 0.9722222222222222,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "dd2b28c39325",
+      "change_type": "modified",
+      "element_type": "dimension",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 147.07000000000005,
+          "x1": 258.9,
+          "y1": 157.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 147.07000000000005,
+          "x1": 258.9,
+          "y1": 157.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Dimension changed from 'Flange Diameter: 42.5 mm' to 'Flange Diameter: 45.0 mm'",
+      "old_value": "Flange Diameter: 42.5 mm",
+      "new_value": "Flange Diameter: 45.0 mm",
+      "confidence": 0.9583333333333333,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "dd2b28c39325",
+      "change_type": "modified",
+      "element_type": "dimension",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 167.07000000000005,
+          "x1": 258.9,
+          "y1": 177.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 0,
+        "page_label": "1",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 167.07000000000005,
+          "x1": 258.9,
+          "y1": 177.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Dimension changed from 'Bolt Circle Diameter: 80.0 mm' to 'Bolt Circle Diameter: 85.0 mm'",
+      "old_value": "Bolt Circle Diameter: 80.0 mm",
+      "new_value": "Bolt Circle Diameter: 85.0 mm",
+      "confidence": 0.9827586206896551,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "08a0138fb072",
+      "change_type": "modified",
+      "element_type": "text",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 52.863000000000056,
+          "x1": 165.048,
+          "y1": 61.863000000000056,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 60.0,
+          "y0": 52.863000000000056,
+          "x1": 165.048,
+          "y1": 61.863000000000056,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Text modified (minor edit): 'FAS-001 Rev A \u2014 Page 2' \u2192 'FAS-001 Rev B \u2014 Page 2'",
+      "old_value": "FAS-001 Rev A \u2014 Page 2",
+      "new_value": "FAS-001 Rev B \u2014 Page 2",
+      "confidence": 0.9772727272727273,
+      "alignment_method": "geometric+text_high"
+    },
+    {
+      "delta_id": "043eda58adfa",
+      "change_type": "modified",
+      "element_type": "dimension",
+      "location_a": {
+        "pid": "pair01_rev_a",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 107.07000000000005,
+          "x1": 253.34,
+          "y1": 117.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "location_b": {
+        "pid": "pair01_rev_b",
+        "page_index": 1,
+        "page_label": "2",
+        "bbox": {
+          "x0": 80.0,
+          "y0": 107.07000000000005,
+          "x1": 253.34,
+          "y1": 117.07000000000005,
+          "page_width": 595.2756,
+          "page_height": 841.8898
+        }
+      },
+      "description": "Dimension changed from 'Wall Thickness: 6.0 mm' to 'Wall Thickness: 8.0 mm'",
+      "old_value": "Wall Thickness: 6.0 mm",
+      "new_value": "Wall Thickness: 8.0 mm",
+      "confidence": 0.9772727272727273,
+      "alignment_method": "geometric+text_high"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "trace_id": "3261d0dc-a5a7-4fd2-98f9-5a55db4a2173",
+  "request_id": "3261d0dc-a5a7-4fd2-98f9-5a55db4a2173",
+  "service": "delta-chat",
+  "version": "0.1.0",
+  "start_time": "2026-07-25T16:13:32.892498+00:00",
+  "end_time": "2026-07-25T16:13:57.271315+00:00",
+  "total_duration_ms": 24378.82,
+  "spans": [
+    {
+      "span_id": "bb8c956d4e28",
+      "parent_span_id": null,
+      "name": "pipeline.ingest",
+      "start_time": "2026-07-25T16:13:32.894434+00:00",
+      "end_time": "2026-07-25T16:13:32.975368+00:00",
+      "duration_ms": 80.93,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "fb2ddd2dfd48",
+      "parent_span_id": "bb8c956d4e28",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T16:13:32.914697+00:00",
+      "end_time": "2026-07-25T16:13:32.934816+00:00",
+      "duration_ms": 20.12,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "path": "C:\\Assignment\\delta-chat\\eval\\datasets\\pair_02\\doc_a.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "a984642870aa",
+      "parent_span_id": "fb2ddd2dfd48",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T16:13:32.917296+00:00",
+      "end_time": "2026-07-25T16:13:32.926517+00:00",
+      "duration_ms": 9.22,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "f046f52a55d2",
+      "parent_span_id": "fb2ddd2dfd48",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T16:13:32.926554+00:00",
+      "end_time": "2026-07-25T16:13:32.934506+00:00",
+      "duration_ms": 7.95,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "page_index": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "bf66f6fa6b6d",
+      "parent_span_id": "bb8c956d4e28",
+      "name": "ingest.pdf_native",
+      "start_time": "2026-07-25T16:13:32.952777+00:00",
+      "end_time": "2026-07-25T16:13:32.974358+00:00",
+      "duration_ms": 21.58,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "path": "C:\\Assignment\\delta-chat\\eval\\datasets\\pair_02\\doc_b.pdf"
+      },
+      "events": []
+    },
+    {
+      "span_id": "95277cf78a18",
+      "parent_span_id": "bf66f6fa6b6d",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T16:13:32.955520+00:00",
+      "end_time": "2026-07-25T16:13:32.966842+00:00",
+      "duration_ms": 11.32,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "page_index": 0
+      },
+      "events": []
+    },
+    {
+      "span_id": "e9fc344182aa",
+      "parent_span_id": "bf66f6fa6b6d",
+      "name": "ingest.pdf_native.page",
+      "start_time": "2026-07-25T16:13:32.966880+00:00",
+      "end_time": "2026-07-25T16:13:32.974111+00:00",
+      "duration_ms": 7.23,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "page_index": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "da5d81fa3684",
+      "parent_span_id": null,
+      "name": "pipeline.delta",
+      "start_time": "2026-07-25T16:13:32.976167+00:00",
+      "end_time": "2026-07-25T16:13:52.225869+00:00",
+      "duration_ms": 19249.7,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "5f048fe28ed1",
+      "parent_span_id": "da5d81fa3684",
+      "name": "delta.engine",
+      "start_time": "2026-07-25T16:13:32.976187+00:00",
+      "end_time": "2026-07-25T16:13:52.225594+00:00",
+      "duration_ms": 19249.41,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "d4dba6bf6ca0",
+      "parent_span_id": "5f048fe28ed1",
+      "name": "delta.align",
+      "start_time": "2026-07-25T16:13:32.976214+00:00",
+      "end_time": "2026-07-25T16:13:36.395352+00:00",
+      "duration_ms": 3419.14,
+      "status": "OK",
+      "attributes": {
+        "pid_a": "pair02_rev1",
+        "pid_b": "pair02_rev2",
+        "elements_a": 14,
+        "elements_b": 14,
+        "matched": 12,
+        "removed": 2,
+        "added": 2,
+        "llm_disambiguated": 1
+      },
+      "events": []
+    },
+    {
+      "span_id": "0549972297b2",
+      "parent_span_id": "d4dba6bf6ca0",
+      "name": "llm.call.groq",
+      "start_time": "2026-07-25T16:13:32.976724+00:00",
+      "end_time": "2026-07-25T16:13:33.306512+00:00",
+      "duration_ms": 329.79,
+      "status": "ERROR",
+      "attributes": {},
+      "events": [
+        {
+          "name": "exception",
+          "timestamp": "2026-07-25T16:13:33.306515+00:00",
+          "type": "RateLimitError",
+          "message": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj7y5h40e82vzsgds7gprg6s` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99795, Requested 555. Please try again in 5m2.4s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      ]
+    },
+    {
+      "span_id": "bad606fb7709",
+      "parent_span_id": "d4dba6bf6ca0",
+      "name": "llm.call.gemini",
+      "start_time": "2026-07-25T16:13:33.306743+00:00",
+      "end_time": "2026-07-25T16:13:36.395251+00:00",
+      "duration_ms": 3088.51,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "89db3c70d1e2",
+      "parent_span_id": "5f048fe28ed1",
+      "name": "delta.classify",
+      "start_time": "2026-07-25T16:13:36.395448+00:00",
+      "end_time": "2026-07-25T16:13:52.225411+00:00",
+      "duration_ms": 15829.96,
+      "status": "OK",
+      "attributes": {
+        "matched": 12,
+        "only_a": 2,
+        "only_b": 2,
+        "total_items": 9,
+        "added": 2,
+        "removed": 2,
+        "modified": 5
+      },
+      "events": []
+    },
+    {
+      "span_id": "7684990c0d4f",
+      "parent_span_id": null,
+      "name": "pipeline.report",
+      "start_time": "2026-07-25T16:13:52.227029+00:00",
+      "end_time": "2026-07-25T16:13:52.259923+00:00",
+      "duration_ms": 32.89,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "72b3441ac323",
+      "parent_span_id": null,
+      "name": "pipeline.index",
+      "start_time": "2026-07-25T16:13:52.261200+00:00",
+      "end_time": "2026-07-25T16:13:57.270254+00:00",
+      "duration_ms": 5009.05,
+      "status": "OK",
+      "attributes": {},
+      "events": []
+    },
+    {
+      "span_id": "a663a7fd2e83",
+      "parent_span_id": "72b3441ac323",
+      "name": "index.pid_a",
+      "start_time": "2026-07-25T16:13:52.271512+00:00",
+      "end_time": "2026-07-25T16:13:53.560228+00:00",
+      "duration_ms": 1288.72,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev1",
+        "elements": 14,
+        "chunks_indexed": 2
+      },
+      "events": []
+    },
+    {
+      "span_id": "b28cc61f642c",
+      "parent_span_id": "72b3441ac323",
+      "name": "index.pid_b",
+      "start_time": "2026-07-25T16:13:53.560315+00:00",
+      "end_time": "2026-07-25T16:13:54.866832+00:00",
+      "duration_ms": 1306.52,
+      "status": "OK",
+      "attributes": {
+        "pid": "pair02_rev2",
+        "elements": 14,
+        "chunks_indexed": 2
+      },
+      "events": []
+    },
+    {
+      "span_id": "c53ef8737021",
+      "parent_span_id": "72b3441ac323",
+      "name": "index.delta",
+      "start_time": "2026-07-25T16:13:54.866900+00:00",
+      "end_time": "2026-07-25T16:13:57.270056+00:00",
+      "duration_ms": 2403.16,
+      "status": "OK",
+      "attributes": {
+        "items": 9,
+        "chunks_indexed": 3
+      },
+      "events": []
+    }
+  ],
+  "llm_calls": [
+    {
+      "span_id": "a71ccce86acd",
+      "model": "groq",
+      "provider": "groq",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "duration_ms": 0.0,
+      "status": "ERROR",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj7y5h40e82vzsgds7gprg6s` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99795, Requested 555. Please try again in 5m2.4s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    {
+      "span_id": "1c3f60e9e922",
+      "model": "gemini-3.5-flash",
+      "provider": "gemini",
+      "input_tokens": 222,
+      "output_tokens": 49,
+      "total_tokens": 271,
+      "estimated_cost_usd": 3.1e-05,
+      "duration_ms": 3087.95,
+      "status": "OK",
+      "error": null
+    }
+  ],
+  "llm_summary": {
+    "total_calls": 2,
+    "total_tokens": 271,
+    "total_cost_usd": 3.1e-05
+  },
+  "errors": [
+    {
+      "span_id": "0549972297b2",
+      "span_name": "llm.call.groq",
+      "error_type": "RateLimitError",
+      "message": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj7y5h40e82vzsgds7gprg6s` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99795, Requested 555. Please try again in 5m2.4s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-07-25T16:13:33.306526+00:00"
+    }
+  ],
+  "error_count": 1
+}

@@ -1,0 +1,101 @@
+{
+  "timestamp": "20260725T135732Z",
+  "mode": "full",
+  "elapsed_ms": 27197.9,
+  "dataset_version": "v1",
+  "delta": {
+    "aggregate": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "run_id": "26b7f5c1-9eca-4b44-af67-dc70a77a2fd7",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 27,
+        "fn": 7,
+        "predicted": 27,
+        "ground_truth": 7
+      },
+      {
+        "pair_id": "pair_02",
+        "status": "skipped",
+        "reason": "document files not found"
+      }
+    ]
+  },
+  "chat": {
+    "aggregate": {
+      "correctness": 0.3,
+      "groundedness": 0.6,
+      "total_qa": 5
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "avg_correctness": 0.3,
+        "avg_groundedness": 0.6,
+        "qa_count": 5
+      }
+    ],
+    "per_question": [
+      {
+        "qa_index": 0,
+        "question": "What dimensions changed between the two revisions?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer fails to provide any relevant information and lacks citations to support its claim of being unable to find the information.",
+        "expected": "Three dimensions changed: (1) Flange diameter from 42.5 mm to 45.0 mm, (2) Bolt circle diameter from 80.0 mm to 85.0 mm, (3) Wall thickness from 6.0 mm to 8.0 mm on page 2.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What dimensions changed between the two revisions?'. Please try rephrasing or asking about specific pages, elements,"
+      },
+      {
+        "qa_index": 1,
+        "question": "Were any notes added in the revised document?",
+        "correctness": 0.0,
+        "groundedness": 1.0,
+        "reason": "The system answer incorrectly states it cannot determine if notes were added, despite the reference answer providing specific details about added notes.",
+        "expected": "Yes, two notes were added on page 2: a safety caution 'CAUTION: Minimum torque 45 N\u00c2\u00b7m' and a reference note 'See DWG-042 for assembly details'.",
+        "got": "The context does not contain information about notes being added in the revised document. The delta reports [Citation 1] and [Citation 2] describe changes to text, including removals and additions of "
+      },
+      {
+        "qa_index": 2,
+        "question": "What is the new flange diameter?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer fails to provide any relevant information about the new flange diameter and lacks citations to support its claim of inability to find information.",
+        "expected": "The flange diameter in revision B (the revised document) is 45.0 mm, changed from 42.5 mm in revision A.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What is the new flange diameter?'. Please try rephrasing or asking about specific pages, elements, or changes."
+      },
+      {
+        "qa_index": 3,
+        "question": "Was anything removed from the document?",
+        "correctness": 0.5,
+        "groundedness": 1.0,
+        "reason": "The system answer is partially correct as it mentions the removal of 'A105', but it provides excessive and unrelated information, and is fully grounded in cited sources.",
+        "expected": "Yes, one table cell was removed: the material grade 'A105' column entry from the spec table on page 1.",
+        "got": "Yes, several items were removed from the document, including text [Citation 1]. The removed text includes: 'A' [Citation 1], '42.5' [Citation 1], 'Flange' [Citation 1], 'Body' [Citation 1], 'A105' [Ci"
+      },
+      {
+        "qa_index": 4,
+        "question": "What is the capital of France?",
+        "correctness": 1.0,
+        "groundedness": 1.0,
+        "reason": "The system answer correctly addresses the question by stating it cannot find relevant information and does not provide any unsubstantiated claims.",
+        "expected": "INSUFFICIENT_GROUNDING: This question is not about the documents being compared and should not be answered from document context.",
+        "got": "I was unable to find relevant information in the indexed documents for your query: 'What is the capital of France?'. Please try rephrasing or asking about specific pages, elements, or changes."
+      }
+    ]
+  },
+  "thresholds": {
+    "min_delta_f1": 0.5,
+    "min_chat_correctness": 0.6,
+    "min_chat_groundedness": 0.65
+  }
+}

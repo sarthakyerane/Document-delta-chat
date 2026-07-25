@@ -1,0 +1,101 @@
+{
+  "timestamp": "20260725T134116Z",
+  "mode": "full",
+  "elapsed_ms": 97688.4,
+  "dataset_version": "v1",
+  "delta": {
+    "aggregate": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "run_id": "ecdbf453-dee5-4096-b184-ccecb5162721",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 27,
+        "fn": 7,
+        "predicted": 27,
+        "ground_truth": 7
+      },
+      {
+        "pair_id": "pair_02",
+        "status": "skipped",
+        "reason": "document files not found"
+      }
+    ]
+  },
+  "chat": {
+    "aggregate": {
+      "correctness": 0.0,
+      "groundedness": 0.0,
+      "total_qa": 5
+    },
+    "pairs": [
+      {
+        "pair_id": "pair_01",
+        "status": "ok",
+        "avg_correctness": 0.0,
+        "avg_groundedness": 0.0,
+        "qa_count": 5
+      }
+    ],
+    "per_question": [
+      {
+        "qa_index": 0,
+        "question": "What dimensions changed between the two revisions?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "Answer is completely incorrect and lacks any cited sources.",
+        "expected": "Three dimensions changed: (1) Flange diameter from 42.5 mm to 45.0 mm, (2) Bolt circle diameter from 80.0 mm to 85.0 mm, (3) Wall thickness from 6.0 mm to 8.0 mm on page 2.",
+        "got": "Unable to process query: embedding service unavailable."
+      },
+      {
+        "qa_index": 1,
+        "question": "Were any notes added in the revised document?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer is incorrect and lacks any cited sources to support its claim.",
+        "expected": "Yes, two notes were added on page 2: a safety caution 'CAUTION: Minimum torque 45 N\u00c2\u00b7m' and a reference note 'See DWG-042 for assembly details'.",
+        "got": "Unable to process query: embedding service unavailable."
+      },
+      {
+        "qa_index": 2,
+        "question": "What is the new flange diameter?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "Answer is completely incorrect and lacks any cited sources.",
+        "expected": "The flange diameter in revision B (the revised document) is 45.0 mm, changed from 42.5 mm in revision A.",
+        "got": "Unable to process query: embedding service unavailable."
+      },
+      {
+        "qa_index": 3,
+        "question": "Was anything removed from the document?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "The system answer does not address the question at all and lacks any citations to support its claims.",
+        "expected": "Yes, one table cell was removed: the material grade 'A105' column entry from the spec table on page 1.",
+        "got": "Unable to process query: embedding service unavailable."
+      },
+      {
+        "qa_index": 4,
+        "question": "What is the capital of France?",
+        "correctness": 0.0,
+        "groundedness": 0.0,
+        "reason": "Answer does not address the question and lacks any cited sources.",
+        "expected": "INSUFFICIENT_GROUNDING: This question is not about the documents being compared and should not be answered from document context.",
+        "got": "Unable to process query: embedding service unavailable."
+      }
+    ]
+  },
+  "thresholds": {
+    "min_delta_f1": 0.5,
+    "min_chat_correctness": 0.6,
+    "min_chat_groundedness": 0.65
+  }
+}

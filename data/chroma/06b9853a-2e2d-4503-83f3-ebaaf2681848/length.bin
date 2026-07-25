@@ -1,0 +1,11 @@
+[text] Flange Assembly Specification Rev B
+[text] Document No.: FAS-001 | Revision: B | Date: 2024-03-15
+[text] 1. DIMENSIONS
+[dimension] Flange Diameter: 45.0 mm
+[dimension] Bolt Circle Diameter: 85.0 mm
+[dimension] Bolt Hole Diameter: 14.0 mm
+[text] Number of Bolts: 8
+[text] 2. MATERIALS
+[text] Component Material Grade Standard
+[text] Bolts A193 B7 ASTM A193
+[text] Gasket 316 SS Spiral Wound ASM
