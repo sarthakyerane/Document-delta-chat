@@ -1,7 +1,6 @@
 # DEMO.md — System Walkthrough & Proof of Capability
 
-> **Document Delta & Grounded Chat** — Applied AI / ML Take-Home Assignment  
-> Author: Sarthak Yerane  
+>   
 > Repository: [github.com/sarthakyerane/Document-delta-chat](https://github.com/sarthakyerane/Document-delta-chat)
 
 ---
