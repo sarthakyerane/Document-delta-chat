@@ -24,6 +24,7 @@ python -c "from src.pipeline.graph import run_pipeline; run_pipeline(pid_a='rev_
 
 
 ![Pipeline Execution Output](image.png)
+![Pipeline output](image-2.png)
 ### Generated Report Summary (`delta_report.md`)
 
 | Metric | Value |
