@@ -36,7 +36,7 @@ python -c "from src.pipeline.graph import run_pipeline; run_pipeline(pid_a='rev_
 | **Average Confidence** | **0.92** |
 | Low-Confidence Items | 0 |
 ![2600](image-5.png)
-
+![alt text](image-7.png)
 ### Breakdown by Element Type
 - **Geometry Shapes & Lines:** 2,568
 - **Table Cells & Schedules:** 27
