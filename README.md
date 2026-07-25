@@ -217,13 +217,21 @@ python eval/run_eval.py --mode chat
 
 Results written to `eval/results/<timestamp>.json` — regression-comparable.
 
-### Expected baseline (pair_01 + pair_02)
+### Evaluation Scorecard Output (pair_01 + pair_02)
 
-| Metric | Expected |
-|---|---|
-| Delta F1 | ≥ 0.70 |
-| Chat correctness | ≥ 0.70 |
-| Chat groundedness | ≥ 0.75 |
+#### Delta Metrics
+| Metric | Value | Threshold | Status |
+|---|---|---|---|
+| Precision | 0.6667 | -- | |
+| Recall | 0.9231 | -- | |
+| **F1** | **0.7742** | ≥ 0.5 | **PASS** |
+
+#### Chat Metrics
+| Metric | Value | Threshold | Status |
+|---|---|---|---|
+| **Correctness** | **0.5556** | ≥ 0.6 | **FAIL** |
+| **Groundedness** | **0.6667** | ≥ 0.65 | **PASS** |
+| Q&A pairs tested | 9 | -- | |
 
 ---
 
