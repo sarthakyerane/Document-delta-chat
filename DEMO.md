@@ -116,7 +116,7 @@ Evaluation completed in 569672 ms
 Results written to: C:\Assignment\delta-chat\eval\results\20260725T174745Z.json
 ```
 
-### Honest Failure Analysis (As required by §06 of assignment rubric)
+### Honest Failure Analysis 
 
 - **Delta F1 (0.7742 - PASS):** Strong performance on detecting true geometric and text deltas without generating hallucinations.
 - **Chat Groundedness (0.6667 - PASS):** Every retrieved answer carries verifiable bounding box and document citations.
