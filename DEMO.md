@@ -89,6 +89,8 @@ make eval
 
 ### Runnable Scorecard Terminal Output
 
+![alt text](image-9.png)
+
 ```text
 ───────────────────────────── delta-chat Evaluation Scorecard ─────────────────────────────
 
